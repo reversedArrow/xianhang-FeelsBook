@@ -68,6 +68,9 @@ public class EmotionDAO {
 
         return true;
     }
+    /**
+    * transcoding
+    */
     public String convertCodeAndGetText(String filePath) {
         BufferedReader reader = null;
         String text = "";
@@ -80,6 +83,9 @@ public class EmotionDAO {
             in = new BufferedInputStream(fis);
             in.mark(4);
             byte[] first3bytes = new byte[3];
+            /**
+            * find the first three byte and determine the codetype
+            */
             in.read(first3bytes);
             in.reset();
             if (first3bytes[0] == (byte) 0xEF && first3bytes[1] == (byte) 0xBB
