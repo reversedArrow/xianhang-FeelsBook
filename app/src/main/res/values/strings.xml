@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">xianhang-FeelsBook</string>
+
+    <string-array name="emotion">
+        <item>love</item>
+        <item>joy</item>
+        <item>surprise</item>
+        <item>anger</item>
+        <item>sadness</item>
+        <item>fear</item>
+    </string-array>
+</resources>

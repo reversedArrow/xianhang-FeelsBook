@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_love"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tv_joy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tv_surprise"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_anger"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tv_sadness"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tv_fear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divide_color"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_emotion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_emotion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="30dp"
+        app:fabSize="mini"
+        android:src="@drawable/plus"
+        app:backgroundTint="@color/colorPrimary"/>
+
+</FrameLayout>
